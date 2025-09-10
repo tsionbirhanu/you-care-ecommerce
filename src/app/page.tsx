@@ -53,8 +53,7 @@ export default function HomePage() {
       <header
         className={`bg-[#62664B] text-white sticky top-0 z-50 transition-shadow duration-300 ${
           isScrolled ? "shadow-lg" : ""
-        }`}
-      >
+        }`}>
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 ml-2">
@@ -62,28 +61,16 @@ export default function HomePage() {
               <span className="text-2xl font-bold">You-Care</span>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <a
-                href="#"
-                className="hover:text-[#AB8872]  px-2 py-1"
-              >
+              <a href="#" className="hover:text-[#AB8872]  px-2 py-1">
                 Home
               </a>
-              <a
-                href="#"
-                className="hover:text-[#AB8872] px-2 py-1"
-              >
+              <a href="#" className="hover:text-[#AB8872] px-2 py-1">
                 Shop
               </a>
-              <a
-                href="#"
-                className="hover:text-[#AB8872] px-2 py-1"
-              >
+              <a href="#" className="hover:text-[#AB8872] px-2 py-1">
                 About
               </a>
-              <a
-                href="#"
-                className="hover:text-[#AB8872] px-2 py-1"
-              >
+              <a href="#" className="hover:text-[#AB8872] px-2 py-1">
                 Contact
               </a>
             </nav>
@@ -91,14 +78,12 @@ export default function HomePage() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-white hover:text-[#AB8872] hover:bg-transparent hidden sm:inline-flex"
-              >
+                className="text-white hover:text-[#AB8872] hover:bg-transparent hidden sm:inline-flex">
                 Login
               </Button>
               <Button
                 size="sm"
-                className="bg-[#AB8872] hover:bg-[#AB8872]/90 text-white focus:outline-none focus:ring-2 focus:ring-white px-3 md:px-4"
-              >
+                className="bg-[#AB8872] hover:bg-[#AB8872]/90 text-white focus:outline-none focus:ring-2 focus:ring-white px-3 md:px-4">
                 <ShoppingCart className="h-4 w-4 md:mr-2" />
                 <span className="hidden md:inline">Cart</span>
               </Button>
@@ -106,8 +91,7 @@ export default function HomePage() {
                 variant="ghost"
                 size="sm"
                 className="md:hidden text-white hover:text-[#AB8872] hover:bg-transparent"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-              >
+                onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 {isMenuOpen ? (
                   <X className="h-6 w-6" />
                 ) : (
@@ -119,35 +103,22 @@ export default function HomePage() {
           {isMenuOpen && (
             <nav className="md:hidden mt-4 pb-4 border-t border-white/20 pt-4">
               <div className="flex flex-col space-y-4">
-                <a
-                  href="#"
-                  className="hover:text-[#AB8872] px-2 py-1"
-                >
+                <a href="#" className="hover:text-[#AB8872] px-2 py-1">
                   Home
                 </a>
-                <a
-                  href="#"
-                  className="hover:text-[#AB8872] px-2 py-1"
-                >
+                <a href="#" className="hover:text-[#AB8872] px-2 py-1">
                   Shop
                 </a>
-                <a
-                  href="#"
-                  className="hover:text-[#AB8872] px-2 py-1"
-                >
+                <a href="#" className="hover:text-[#AB8872] px-2 py-1">
                   About
                 </a>
-                <a
-                  href="#"
-                  className="hover:text-[#AB8872]  px-2 py-1"
-                >
+                <a href="#" className="hover:text-[#AB8872]  px-2 py-1">
                   Contact
                 </a>
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-white hover:text-[#AB8872] hover:bg-transparent justify-start px-2 sm:hidden"
-                >
+                  className="text-white hover:text-[#AB8872] hover:bg-transparent justify-start px-2 sm:hidden">
                   Login
                 </Button>
               </div>
@@ -157,83 +128,66 @@ export default function HomePage() {
       </header>
 
       <main>
-        <section className="relative pb-12 lg:pb-10 bg-[#EFECE4]">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-            {/* Text Content - Left Side */}
-            <div className="lg:w-1/2 text-center lg:text-left space-y-6 lg:space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#62664B] text-balance leading-tight">
-                  Glow from Within with
-                  <span className="block text-[#AB8872] mt-2">Premium Natural Care</span>
-                </h1>
-                <p className="text-lg sm:text-xl lg:text-2xl text-[#62664B]/90 text-pretty">
-                  Discover trusted healthcare and beauty products for your holistic lifestyle.
-                  Quality ingredients, visible results.
-                </p>
+        <section className="relative pb-20 lg:pb-6 bg-[#EFECE4]">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+              {/* Text Content - Left Side */}
+              <div className="lg:w-1/2 text-center lg:text-left space-y-6 lg:space-y-8 mt-8 md:mt-12 lg:mt-0"> {/* Added mt-8 for mobile */}
+                <div className="space-y-4">
+                  <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-[#62664B] text-balance leading-tight">
+                    Glow from Within with
+                    <span className="block text-[#AB8872] mt-2">
+                      Premium Natural Care
+                    </span>
+                  </h1>
+                  <p className="text-lg sm:text-xl lg:text-2xl text-[#62664B]/90 text-pretty">
+                    Discover trusted healthcare and beauty products for your
+                    holistic lifestyle. Quality ingredients, visible results.
+                  </p>
+                </div>
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                  <Button
+                    size="lg"
+                    className="bg-[#62664B] hover:bg-[#4a4e3a] text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#62664B]"
+                  >
+                    <ShoppingCart className="h-5 w-5 mr-2" />
+                    Shop Now
+                  </Button>
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-2 border-[#62664B] text-[#62664B] hover:bg-[#62664B] hover:text-white rounded-full px-8 py-6 text-lg font-semibold bg-white/80 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Leaf className="h-5 w-5 mr-2" />
+                    Discover Products
+                  </Button>
+                </div>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                <Button
-                  size="lg"
-                  className="bg-[#62664B] hover:bg-[#4a4e3a] text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#62664B]"
-                >
-                  <ShoppingCart className="h-5 w-5 mr-2" />
-                  Shop Now
-                </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-[#62664B] text-[#62664B] hover:bg-[#62664B] hover:text-white rounded-full px-8 py-6 text-lg font-semibold bg-white/80 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                >
-                  <Leaf className="h-5 w-5 mr-2" />
-                  Discover Products
-                </Button>
-              </div>
-
-              {/* Trust Indicators */}
-              {/* <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-8">
-                <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm">
-                  <div className="flex -space-x-2">
-                    {[...Array(4)].map((_, i) => (
-                      <div key={i} className="w-6 h-6 bg-[#AB8872] rounded-full border-2 border-white"></div>
-                    ))}
-                  </div>
-                  <span className="text-sm font-medium text-[#62664B]">10k+ Happy Customers</span>
+              {/* Image Content - Right Side */}
+              <div className="lg:w-1/2 flex justify-center">
+                <div className="relative w-full max-w-lg pt-8">
+                  <Image
+                    src="/image/glow2.jpeg"
+                    alt="Natural beauty products"
+                    width={600}
+                    height={600}
+                    className="rounded-2xl shadow-2xl w-full h-auto object-contain"
+                    priority
+                  />
                 </div>
-                <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm">
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <span className="text-sm font-medium text-[#62664B]">4.9/5 Rating</span>
-                </div>
-              </div> */}
-            </div>
-
-            <div className="lg:w-1/2 flex justify-center">
-              <div className="relative w-full max-w-lg pt-8">
-                <Image
-                  src="/image/glow2.jpeg"
-                  alt="Natural beauty products"
-                  width={600}
-                  height={600}
-                  className="rounded-2xl shadow-2xl w-full h-auto object-contain"
-                  priority
-                />
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="bg-white/80 rounded-full p-2 shadow-lg">
-            <ChevronDown className="h-6 w-6 text-[#62664B]" />
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="bg-white/80 rounded-full p-2 shadow-lg">
+              <ChevronDown className="h-6 w-6 text-[#62664B]" />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
         <section className="py-20 bg-[#BBC2B6]">
           <div className="container mx-auto px-6">
@@ -274,8 +228,7 @@ export default function HomePage() {
               ].map((category) => (
                 <Card
                   key={category.name}
-                  className="group hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer bg-white border-0 shadow-lg focus-within:ring-2 focus-within:ring-[#62664B]"
-                >
+                  className="group hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer bg-white border-0 shadow-lg focus-within:ring-2 focus-within:ring-[#62664B]">
                   <CardContent className="p-6 text-center">
                     <div className="mb-6 h-48 overflow-hidden rounded-lg">
                       <Image
@@ -291,8 +244,7 @@ export default function HomePage() {
                     </h3>
                     <Button
                       variant="ghost"
-                      className="text-[#AB8872] hover:text-[#62664B] hover:bg-[#62664B]/10 focus:outline-none focus:ring-2 focus:ring-[#62664B]"
-                    >
+                      className="text-[#AB8872] hover:text-[#62664B] hover:bg-[#62664B]/10 focus:outline-none focus:ring-2 focus:ring-[#62664B]">
                       Explore {category.name}
                     </Button>
                   </CardContent>
@@ -345,8 +297,7 @@ export default function HomePage() {
               ].map((product) => (
                 <Card
                   key={product.name}
-                  className="group hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-white border-0 shadow-lg"
-                >
+                  className="group hover:shadow-2xl hover:scale-105 transition-all duration-300 bg-white border-0 shadow-lg">
                   <CardContent className="p-6">
                     <div className="relative mb-6">
                       <Image
@@ -361,8 +312,7 @@ export default function HomePage() {
                       <Button
                         size="sm"
                         className="absolute top-3 right-3 bg-white/90 hover:bg-white text-[#62664B] shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#62664B]"
-                        variant="ghost"
-                      >
+                        variant="ghost">
                         <Heart className="h-4 w-4" />
                         <span className="sr-only">Add to wishlist</span>
                       </Button>
@@ -436,8 +386,7 @@ export default function HomePage() {
               ].map((feature) => (
                 <div
                   key={feature.title}
-                  className="text-center space-y-6 group hover:scale-105 transition-transform duration-300"
-                >
+                  className="text-center space-y-6 group hover:scale-105 transition-transform duration-300">
                   <div className="inline-flex items-center justify-center w-20 h-20 bg-[#BBC2B6] rounded-full group-hover:bg-[#AB8872] transition-colors duration-300 shadow-lg">
                     <feature.icon className="h-10 w-10 text-[#62664B] group-hover:text-white transition-colors duration-300" />
                   </div>
@@ -486,8 +435,7 @@ export default function HomePage() {
               ].map((testimonial) => (
                 <Card
                   key={testimonial.name}
-                  className="bg-white border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
-                >
+                  className="bg-white border-0 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
                   <CardContent className="p-8">
                     <div className="flex items-center gap-1 mb-6">
                       {[...Array(testimonial.rating)].map((_, i) => (
@@ -522,8 +470,7 @@ export default function HomePage() {
               </p>
               <form
                 onSubmit={handleNewsletterSubmit}
-                className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto pt-4"
-              >
+                className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto pt-4">
                 <Input
                   type="email"
                   required
@@ -532,8 +479,7 @@ export default function HomePage() {
                 />
                 <Button
                   type="submit"
-                  className="bg-[#62664B] hover:bg-[#62664B]/90 text-white rounded-full px-8 py-4 whitespace-nowrap font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
-                >
+                  className="bg-[#62664B] hover:bg-[#62664B]/90 text-white rounded-full px-8 py-4 whitespace-nowrap font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white">
                   Subscribe
                 </Button>
               </form>
@@ -566,26 +512,22 @@ export default function HomePage() {
               <div className="space-y-1">
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   Shop
                 </a>
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   About Us
                 </a>
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   Contact
                 </a>
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   FAQ
                 </a>
               </div>
@@ -595,26 +537,22 @@ export default function HomePage() {
               <div className="space-y-1">
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   Help Center
                 </a>
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   Shipping Info
                 </a>
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   Returns
                 </a>
                 <a
                   href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
+                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]">
                   Privacy Policy
                 </a>
               </div>
