@@ -64,25 +64,25 @@ export default function HomePage() {
             <nav className="hidden md:flex items-center space-x-8">
               <a
                 href="#"
-                className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                className="hover:text-[#AB8872]  px-2 py-1"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                className="hover:text-[#AB8872] px-2 py-1"
               >
                 Shop
               </a>
               <a
                 href="#"
-                className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                className="hover:text-[#AB8872] px-2 py-1"
               >
                 About
               </a>
               <a
                 href="#"
-                className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                className="hover:text-[#AB8872] px-2 py-1"
               >
                 Contact
               </a>
@@ -91,7 +91,7 @@ export default function HomePage() {
               <Button
                 variant="ghost"
                 size="sm"
-                className="text-white hover:text-[#AB8872] hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-[#AB8872] hidden sm:inline-flex"
+                className="text-white hover:text-[#AB8872] hover:bg-transparent hidden sm:inline-flex"
               >
                 Login
               </Button>
@@ -121,25 +121,25 @@ export default function HomePage() {
               <div className="flex flex-col space-y-4">
                 <a
                   href="#"
-                  className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                  className="hover:text-[#AB8872] px-2 py-1"
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                  className="hover:text-[#AB8872] px-2 py-1"
                 >
                   Shop
                 </a>
                 <a
                   href="#"
-                  className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                  className="hover:text-[#AB8872] px-2 py-1"
                 >
                   About
                 </a>
                 <a
                   href="#"
-                  className="hover:text-[#AB8872] transition-colors focus:outline-none focus:ring-2 focus:ring-[#AB8872] rounded px-2 py-1"
+                  className="hover:text-[#AB8872]  px-2 py-1"
                 >
                   Contact
                 </a>
@@ -157,86 +157,84 @@ export default function HomePage() {
       </header>
 
       <main>
-        {/* Hero Section with Side-by-Side Layout */}
-        <section className="relative  pb-12 lg:pb-10 bg-[#EFECE4]">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-              {/* Text Content - Left Side */}
-              <div className="lg:w-1/2 text-center lg:text-left space-y-6 lg:space-y-8">
-                <div className="space-y-4">
-                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#62664B] text-balance leading-tight">
-                    Glow from Within with
-                    <span className="block text-[#AB8872] mt-2">Premium Natural Care</span>
-                  </h1>
-                  <p className="text-lg sm:text-xl lg:text-2xl text-[#62664B]/90 text-pretty">
-                    Discover trusted healthcare and beauty products for your holistic lifestyle. 
-                    Quality ingredients, visible results.
-                  </p>
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                  <Button
-                    size="lg"
-                    className="bg-[#62664B] hover:bg-[#4a4e3a] text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#62664B]"
-                  >
-                    <ShoppingCart className="h-5 w-5 mr-2" />
-                    Shop Now
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="border-2 border-[#62664B] text-[#62664B] hover:bg-[#62664B] hover:text-white rounded-full px-8 py-6 text-lg font-semibold bg-white/80 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    <Leaf className="h-5 w-5 mr-2" />
-                    Discover Products
-                  </Button>
-                </div>
-
-                {/* Trust Indicators */}
-                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-8">
-                  <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm">
-                    <div className="flex -space-x-2">
-                      {[...Array(4)].map((_, i) => (
-                        <div key={i} className="w-6 h-6 bg-[#AB8872] rounded-full border-2 border-white"></div>
-                      ))}
-                    </div>
-                    <span className="text-sm font-medium text-[#62664B]">10k+ Happy Customers</span>
-                  </div>
-                  <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm">
-                    <div className="flex items-center gap-1">
-                      {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                    <span className="text-sm font-medium text-[#62664B]">4.9/5 Rating</span>
-                  </div>
-                </div>
+        <section className="relative pb-12 lg:pb-10 bg-[#EFECE4]">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+            {/* Text Content - Left Side */}
+            <div className="lg:w-1/2 text-center lg:text-left space-y-6 lg:space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#62664B] text-balance leading-tight">
+                  Glow from Within with
+                  <span className="block text-[#AB8872] mt-2">Premium Natural Care</span>
+                </h1>
+                <p className="text-lg sm:text-xl lg:text-2xl text-[#62664B]/90 text-pretty">
+                  Discover trusted healthcare and beauty products for your holistic lifestyle.
+                  Quality ingredients, visible results.
+                </p>
               </div>
 
-              <div className="lg:w-1/2 flex justify-center">
-                <div className="relative w-full max-w-lg pt-8">
-                  <Image
-                    src="/image/glow2.jpeg"
-                    alt="Natural beauty products"
-                    width={600}
-                    height={600}
-                    className="rounded-2xl shadow-2xl w-full h-auto object-contain"
-                    priority
-                  />
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
+                <Button
+                  size="lg"
+                  className="bg-[#62664B] hover:bg-[#4a4e3a] text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-[#62664B]"
+                >
+                  <ShoppingCart className="h-5 w-5 mr-2" />
+                  Shop Now
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-[#62664B] text-[#62664B] hover:bg-[#62664B] hover:text-white rounded-full px-8 py-6 text-lg font-semibold bg-white/80 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
+                  <Leaf className="h-5 w-5 mr-2" />
+                  Discover Products
+                </Button>
+              </div>
+
+              {/* Trust Indicators */}
+              {/* <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-8">
+                <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm">
+                  <div className="flex -space-x-2">
+                    {[...Array(4)].map((_, i) => (
+                      <div key={i} className="w-6 h-6 bg-[#AB8872] rounded-full border-2 border-white"></div>
+                    ))}
+                  </div>
+                  <span className="text-sm font-medium text-[#62664B]">10k+ Happy Customers</span>
                 </div>
+                <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 shadow-sm">
+                  <div className="flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <span className="text-sm font-medium text-[#62664B]">4.9/5 Rating</span>
+                </div>
+              </div> */}
+            </div>
+
+            <div className="lg:w-1/2 flex justify-center">
+              <div className="relative w-full max-w-lg pt-8">
+                <Image
+                  src="/image/glow2.jpeg"
+                  alt="Natural beauty products"
+                  width={600}
+                  height={600}
+                  className="rounded-2xl shadow-2xl w-full h-auto object-contain"
+                  priority
+                />
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="bg-white/80 rounded-full p-2 shadow-lg">
-              <ChevronDown className="h-6 w-6 text-[#62664B]" />
-            </div>
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="bg-white/80 rounded-full p-2 shadow-lg">
+            <ChevronDown className="h-6 w-6 text-[#62664B]" />
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Shop by Category Section */}
         <section className="py-20 bg-[#BBC2B6]">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
@@ -304,7 +302,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Popular Products Section */}
         <section className="py-20 bg-[#EFECE4]">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
@@ -404,7 +401,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
@@ -457,7 +453,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
         <section className="py-20 bg-[#EFECE4]">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
@@ -515,7 +510,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Newsletter Section */}
         <section className="py-20 bg-[#AB8872]">
           <div className="container mx-auto px-6 text-center">
             <div className="max-w-2xl mx-auto space-y-8">
@@ -550,8 +544,7 @@ export default function HomePage() {
 
       <footer className="bg-[#62664B] text-white py-10 sm:py-12">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-            {/* BRAND */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             <div className="space-y-4 sm:space-y-6">
               <div className="flex items-center space-x-2">
                 <Leaf className="h-6 w-6" />
@@ -566,7 +559,6 @@ export default function HomePage() {
                 <Twitter className="h-5 w-5 text-white/80 hover:text-[#AB8872]" />
               </div>
             </div>
-            {/* QUICK LINKS */}
             <div className="space-y-3 sm:space-y-4">
               <h3 className="text-sm sm:text-base font-semibold">
                 Quick Links
@@ -598,37 +590,6 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-            {/* CATEGORIES */}
-            <div className="space-y-3 sm:space-y-4">
-              <h3 className="text-sm sm:text-base font-semibold">Categories</h3>
-              <div className="space-y-1">
-                <a
-                  href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
-                  Skincare
-                </a>
-                <a
-                  href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
-                  Supplements
-                </a>
-                <a
-                  href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
-                  Wellness
-                </a>
-                <a
-                  href="#"
-                  className="block text-white/80 text-sm sm:text-base hover:text-[#AB8872]"
-                >
-                  Beauty
-                </a>
-              </div>
-            </div>
-            {/* SUPPORT */}
             <div className="space-y-3 sm:space-y-4">
               <h3 className="text-sm sm:text-base font-semibold">Support</h3>
               <div className="space-y-1">
